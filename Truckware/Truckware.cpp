@@ -9,16 +9,11 @@
 
 cMemory Memory;
 
-typedef std::map<std::string, std::function<void(void)>> CommandDictionary;
-
 static DWORD MoneyPointer                       = { 0x011367E4 };
 static std::vector<DWORD> MoneyOffsets          = { 0xC, 0x10 };
 static int CurrentMoney                         = { 0x0 };
 
 int main() {
-    CommandDictionary Command;
-    std::string UserInput;
-
     Memory.FindProcess("eurotrucks2.exe");
     uintptr_t ModuleBase = Memory.GetModuleBaseAddress("eurotrucks2.exe");
 
