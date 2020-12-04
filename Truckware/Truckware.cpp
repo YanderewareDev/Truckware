@@ -9,7 +9,7 @@
 
 cMemory Memory;
 
-static DWORD MoneyPointer                       = { 0x011367E4 };
+static DWORD MoneyPointer                       = { 0x012ACACC };
 static std::vector<DWORD> MoneyOffsets          = { 0xC, 0x10 };
 static int CurrentMoney                         = { 0x0 };
 
